@@ -1,0 +1,1104 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+/* font-family: 'Londrina Outline', cursive; */
+
+
+/*메인페이지*/
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.wrap {
+    width: 1100px;
+    height: 720px;
+    margin: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative
+}
+.pageSize {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.mainPage {
+    position: relative;
+    z-index: 9;
+    transition: all 0.2s;
+}
+.mainPage ul {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.mainPage ul li {
+    font-size: 27px;
+    font-weight: bold;
+    background: none;
+    font-weight: bold;
+    margin-bottom: -13.5px;
+    text-shadow: 0px 0px 2px #ccc;
+    color: #fff;    
+}
+.mainPage ul li {
+    animation: pfirst 6s both infinite 3s;
+}
+@keyframes pfirst {
+    0% { color: #fff }
+    50% { color: #ddd }
+    100% { color: #fff }
+}
+.mainPage ul li:first-child { color: #000 !important; }
+.mainPage .bg {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    font-weight: bold;
+}
+.mainPage .bg .firstName {
+    margin-right: 15px;
+    width: 390px;
+    height: 107px;
+    overflow: hidden;
+}
+.mainPage .bg .lastName {
+    margin-left: 15px;
+    width: 183px;
+    height: 107px;
+    overflow: hidden;
+    position: relative;
+}
+.mainPage .bg .firstName .depth1 {
+    height: 535px;
+}
+.mainPage .bg .lastName .depth1 {
+    width: 915px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mainPage .bg .lastName .depth1 p {
+    display: inline-block;
+}
+.mainPage .bg .guideBtn {
+    position: absolute;
+    bottom: 17px;
+    right: 60px;
+    text-align: center;
+    z-index: 11;
+}
+.mainPage .bg .guideBtn a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: #ffcb05;
+    color: #000;
+    transition: all 0.2s;
+}
+.mainPage .bg .guideBtn a:hover {
+    background: #000;
+    color: #ffcb05;
+}
+.second {
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+}
+
+/*두번째페이지*/
+.secondPage {
+    margin-top: 20px;
+    opacity: 0;
+    display: none;
+    z-index: 12;
+    font-weight: bold;
+    text-align: center;
+    background: #fff;
+}
+.secondPage .textBox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.secondPage h1 {
+    font-size: 72px;
+    padding-right: 25px;
+}
+.secondPage  { font-size: 46px; }
+
+.secondPage .guideBtn {
+    position: absolute;
+    top: 60px;
+    right: 215px;
+    text-align: center;
+    z-index: 13;
+}
+.secondPage .guideBtn a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: #ffcb05;
+    color: #000;
+    transition: all 0.2s;
+}
+.secondPage .guideBtn a:hover {
+    background: #000;
+    color: #ffcb05;
+}
+
+/*세번째페이지*/
+.thridPage {
+    /* margin-top: 20px;
+    opacity: 0;
+    display: none; */
+    /* border: 1px solid #ddd; */
+    z-index: 14;
+    font-weight: bold;
+    background: #fff;
+}
+.thridPage .depth1 {
+    color: #000;
+    background: #ffcb05;
+    font-size: 62px;
+    text-align: center;
+    transition: all 0.2s;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    opacity: 1;
+}
+.thridPage .depth1 .aboutP {
+    line-height: 400px;
+}
+.thridPage .depth2 {
+    color: #fff;
+    background: #0095da;
+    font-size: 62px;
+    text-align: center;
+    transition: all 0.2s;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    opacity: 1;
+}
+.thridPage .depth2 .portP {
+    line-height: 400px;
+}
+.thridPage .depth1:hover,
+.thridPage .depth2:hover {
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+}
+.thridPage .guideBtn {
+    position: absolute;
+    text-align: center;
+    z-index: 16;
+    opacity: 0;
+    display: none;
+}
+.thridPage .aboutBtn {
+    top: 51%;
+    right: 27px;
+}
+.thridPage .portBtn {
+    top: 51%;
+    right: 30px;
+}
+.thridPage .guideBtn a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: #ffcb05;
+    color: #000;
+    transition: all 0.2s;
+}
+.thridPage .guideBtn a:hover {
+    background: #000;
+    color: #ffcb05;
+}
+/*세번째페이지 어바웃미 서브페이지*/
+.thridPage .depth1 .leftUp {
+    background: #ddd;
+    width: 350px;
+    height: 420px;
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    margin-bottom: -240px;
+    z-index: 17;
+    opacity: 0;
+    display: none;
+}
+.thridPage .depth1 .rightUp {
+    /* background: #000; */
+    width: 750px;
+    height: 300px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -120px;
+    opacity: 0;
+    display: none;
+}
+.thridPage .depth1 .rightDown {
+    background: #ddd;
+    width: 350px;
+    height: 420px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    z-index: 17;
+    margin-top: -280px;
+    opacity: 0;
+    display: none;
+}
+.thridPage .depth1 .leftDown {
+    /* background: greenyellow; */
+    width: 750px;
+    height: 300px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: -160px;
+    opacity: 0;
+    display: none;
+}
+/*세번째페이지 포트폴리오 서브페이지*/
+.thridPage .depth2 .rightUp {
+    background: #4eb6e7;
+    width: 350px;
+    height: 420px;
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    margin-bottom: -240px;
+    opacity: 0;
+    display: none;
+}
+.thridPage .depth2 .middleUp {
+    background: #39c5f3;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: -120px;
+    z-index: 17;
+    opacity: 0;
+    display: none;
+}
+.thridPage .depth2 .leftUp {
+    background: #0eaee5;
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    margin-bottom: -120px;
+    z-index: 17;
+    opacity: 0;
+    display: none;
+}
+.thridPage .depth2 .leftDown {
+    background: #4eb6e7;
+    width: 350px;
+    height: 420px;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    margin-top: -280px;
+    opacity: 0;
+    display: none;
+}
+.thridPage .depth2 .middleDown {
+    background: #39c5f3;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -160px;
+    z-index: 17;
+    opacity: 0;
+    display: none;
+}
+.thridPage .depth2 .rightDown {
+    background: #0eaee5;
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    z-index: 17;
+    margin-top: -160px;
+    opacity: 0;
+    display: none;
+}
+/*세번째페이지 클릭제어 시작*/
+.thridPage .depth1.on1:hover,
+.thridPage .depth2.on2:hover {
+    cursor: default;
+}
+.thridPage .depth1.on1 {
+    margin-left: 200px;
+    background: #fff;
+    color: #000;
+    background: #fff;
+}
+.thridPage .depth2.on1 {
+    opacity: 0;
+    display: none;
+    z-index: 14;
+}
+.thridPage .aboutBtn.on1 {
+    display: block;
+    opacity: 1;
+}
+.thridPage .portBtn.on1 {
+    opacity: 0;
+    display: none;
+}
+.thridPage .depth1.on2 {
+    opacity: 0;
+    display: none;
+    z-index: 17;
+}
+.thridPage .depth2.on2 {
+    margin-right: 200px;
+    background: #fff;
+    color: #000;
+}
+.thridPage .aboutBtn.on2 {
+    opacity: 0;
+    display: none;
+}
+.thridPage .portBtn.on2 {
+    display: block;
+    opacity: 1;
+}
+/*세번째페이지 클릭제어 끝*/
+
+/*depth1 leftUp 제어 시작*/
+.thridPage .depth1 .leftUp .box1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 330px;
+    height: 400px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400;
+}
+.thridPage .depth1 .leftUp .box2 h2,
+.thridPage .depth1 .leftUp .box3 h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 10px 12px;
+    position: relative;
+}
+.thridPage .depth1 .leftUp .box2 h2::before,
+.thridPage .depth1 .leftUp .box3 h2::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 3px;
+    height: 18px;
+    background: #000;
+}
+.thridPage .depth1 .leftUp .box2 p,
+.thridPage .depth1 .leftUp .box3 p {
+    padding-bottom: 5px;
+}
+.thridPage .depth1 .leftUp .box2 {
+    flex: 1.3;
+    width: 100%;
+    height: 100%;
+    /* background: #000; */
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0 0 10px;
+}
+.thridPage .depth1 .leftUp .box3 {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    /* background: #000; */
+    padding: 10px 0 0 10px;
+}
+.thridPage .depth1 .leftUp .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffcb05;
+    opacity: 0.9;
+    z-index: 20;
+}
+.thridPage .depth1 .leftUp .cover p {
+    position: absolute;
+    bottom: 102%;
+    left: 5%;
+    font-size: 26px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.thridPage .depth1 .leftUp .cover p.on1 {
+    opacity: 1;
+    animation: pulse 1s both infinite 0.2s;
+}
+/*depth1 leftUp 제어 끝*/
+
+/*depth1 rightUp 제어 시작*/
+.thridPage .depth1 .rightUp > div {
+    float: left;
+}
+.thridPage .depth1 .rightUp .box1 {
+    width: 300px;
+    height: 300px;
+    /* background: #000; */
+    background: url(../img/MBTI-edit2.png) no-repeat center;
+    background-size: cover;
+}
+.thridPage .depth1 .rightUp .box2 {
+    width: 450px;
+    height: 300px;
+    /* background: #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.thridPage .depth1 .rightUp .box2 .box3 {
+    height: 25%;
+    line-height: 75px;
+    font-size: 32px;
+    background: #5ea9ac;
+}
+.thridPage .depth1 .rightUp .box2 .box3 > p {
+    color: #fff;
+}
+.thridPage .depth1 .rightUp .box2 .box4 {
+    height: 75%;
+    /* background: #000; */
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li {
+    float: left;
+    height: 75px;
+    width: 50%;
+    position: relative;
+    border-bottom: 1px solid #c4c4c4;
+    background: #f5f6f6;
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li:nth-child(odd) {
+    border-right: 1px solid #c4c4c4;
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li:nth-child(5),
+.thridPage .depth1 .rightUp .box2 .box4 ul li:nth-child(6) {
+    border-bottom: none;
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li p {
+    font-size: 16px;
+    padding-top: 10px;
+    color: #464646;
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li .uniColor1 {
+    color: #876651;
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li .uniColor2 {
+    color: #4b9fba;
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li .outerBox {
+    width: 80%;
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li .outerBox {
+    background: #ddeaed;
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li .innerBox {
+    width: 0%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #6dc0da;
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li .innerBox > span {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.thridPage .depth1 .rightUp .cover {
+    background: #ffd65c;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 20;
+}
+.thridPage .depth1 .rightUp .cover p {
+    position: absolute;
+    bottom: 102%;
+    right: 2%;
+    font-size: 26px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.thridPage .depth1 .rightUp .cover p.on1 {
+    opacity: 1;
+    animation: pulse 1s both infinite 0.2s;
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li.list1 .innerBox.on1 {
+    animation: list1 1s both 0.5s;
+}
+@keyframes list1 {
+    to {
+        width: 57%
+    }
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li.list2 .innerBox.on1 {
+    animation: list2 1s both 0.5s;
+}
+@keyframes list2 {
+    to {
+        width: 56%
+    }
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li.list3 .innerBox.on1 {
+    animation: list3 1s both 0.5s;
+}
+@keyframes list3 {
+    to {
+        width: 61%
+    }
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li.list4 .innerBox.on1 {
+    animation: list4 1s both 0.5s;
+}
+@keyframes list4 {
+    to {
+        width: 81%
+    }
+}
+.thridPage .depth1 .rightUp .box2 .box4 ul li.list5 .innerBox.on1 {
+    animation: list5 1s both 0.5s;
+}
+@keyframes list5 {
+    to {
+        width: 74%
+    }
+}
+/*depth1 rightUp 제어 끝*/
+
+/*depth1 rightDown 제어 시작*/
+.thridPage .depth1 .rightDown .box1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 330px;
+    height: 400px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400;
+}
+.thridPage .depth1 .rightDown .box2 h2,
+.thridPage .depth1 .rightDown .box3 h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 10px 12px;
+    position: relative;
+}
+.thridPage .depth1 .rightDown .box2 h2::before,
+.thridPage .depth1 .rightDown .box3 h2::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 3px;
+    height: 18px;
+    background: #000;
+}
+.thridPage .depth1 .rightDown .box2 p,
+.thridPage .depth1 .rightDown .box3 p {
+    padding-bottom: 5px;
+}
+.thridPage .depth1 .rightDown .box2 {
+    flex: 1.4;
+    width: 100%;
+    height: 100%;
+    /* background: #000; */
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0 0 10px;
+}
+.thridPage .depth1 .rightDown .box3 {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    /* background: #000; */
+    padding: 10px 0 0 10px;
+}
+.thridPage .depth1 .rightDown .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffcb05;
+    opacity: 0.9;
+    z-index: 20;
+}
+.thridPage .depth1 .rightDown .cover p {
+    position: absolute;
+    top: 102%;
+    right: 5%;
+    font-size: 26px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.thridPage .depth1 .rightDown .cover p.on1 {
+    opacity: 1;
+    animation: pulse 1s both infinite 0.2s;
+}
+/*depth1 rightDown 제어 끝*/
+
+/*depth1 leftDown 제어 시작*/
+.thridPage .depth1 .leftDown .box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: #000; */
+    width: 100%;
+    height: 50%;
+    z-index: 18;
+}
+.thridPage .depth1 .leftDown .box2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background: #000; */
+    width: 100%;
+    height: 50%;
+    z-index: 18;    
+}
+.thridPage .depth1 .leftDown .box1 > div,
+.thridPage .depth1 .leftDown .box2 > div {
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: relative;
+    z-index: 19;
+}
+.thridPage .depth1 .leftDown .box1 .html > div.html3 span.title,
+.thridPage .depth1 .leftDown .box1 .css > div.css3 span.title,
+.thridPage .depth1 .leftDown .box1 .java > div.java3 span.title,
+.thridPage .depth1 .leftDown .box1 .jquery > div.jquery3 span.title,
+.thridPage .depth1 .leftDown .box1 .react > div.react3 span.title,
+.thridPage .depth1 .leftDown .box2 .illust > div.illust3 span.title,
+.thridPage .depth1 .leftDown .box2 .photo > div.photo3 span.title,
+.thridPage .depth1 .leftDown .box2 .inde > div.inde3 span.title,
+.thridPage .depth1 .leftDown .box2 .premi > div.premi3 span.title,
+.thridPage .depth1 .leftDown .box2 .after > div.after3 span.title {
+    font-size: 24px;
+}
+.thridPage .depth1 .leftDown .box1 .html > div.html3 span.percent,
+.thridPage .depth1 .leftDown .box1 .css > div.css3 span.percent,
+.thridPage .depth1 .leftDown .box1 .java > div.java3 span.percent,
+.thridPage .depth1 .leftDown .box1 .jquery > div.jquery3 span.percent,
+.thridPage .depth1 .leftDown .box1 .react > div.react3 span.percent,
+.thridPage .depth1 .leftDown .box2 .illust > div.illust3 span.percent,
+.thridPage .depth1 .leftDown .box2 .photo > div.photo3 span.percent,
+.thridPage .depth1 .leftDown .box2 .inde > div.inde3 span.percent,
+.thridPage .depth1 .leftDown .box2 .premi > div.premi3 span.percent,
+.thridPage .depth1 .leftDown .box2 .after > div.after3 span.percent {
+    font-size: 32px;
+}
+.thridPage .depth1 .leftDown .box1 .html > div.html3 span.percent span.uniText,
+.thridPage .depth1 .leftDown .box1 .css > div.css3 span.percent span.uniText,
+.thridPage .depth1 .leftDown .box1 .java > div.java3 span.percent span.uniText,
+.thridPage .depth1 .leftDown .box1 .jquery > div.jquery3 span.percent span.uniText,
+.thridPage .depth1 .leftDown .box1 .react > div.react3 span.percent span.uniText,
+.thridPage .depth1 .leftDown .box2 .illust > div.illust3 span.percent span.uniText,
+.thridPage .depth1 .leftDown .box2 .photo > div.photo3 span.percent span.uniText,
+.thridPage .depth1 .leftDown .box2 .inde > div.inde3 span.percent span.uniText,
+.thridPage .depth1 .leftDown .box2 .premi > div.premi3 span.percent span.uniText,
+.thridPage .depth1 .leftDown .box2 .after > div.after3 span.percent span.uniText {
+    font-size: 20px;
+}
+.thridPage .depth1 .leftDown .box1 .html > div.html1,
+.thridPage .depth1 .leftDown .box1 .css > div.css1,
+.thridPage .depth1 .leftDown .box1 .java > div.java1,
+.thridPage .depth1 .leftDown .box1 .jquery > div.jquery1,
+.thridPage .depth1 .leftDown .box1 .react > div.react1,
+.thridPage .depth1 .leftDown .box2 .illust > div.illust1,
+.thridPage .depth1 .leftDown .box2 .photo > div.photo1,
+.thridPage .depth1 .leftDown .box2 .inde > div.inde1,
+.thridPage .depth1 .leftDown .box2 .premi > div.premi1,
+.thridPage .depth1 .leftDown .box2 .after > div.after1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+.thridPage .depth1 .leftDown .box1 .html > div.html2,
+.thridPage .depth1 .leftDown .box1 .css > div.css2,
+.thridPage .depth1 .leftDown .box1 .java > div.java2,
+.thridPage .depth1 .leftDown .box1 .jquery > div.jquery2,
+.thridPage .depth1 .leftDown .box1 .react > div.react2,
+.thridPage .depth1 .leftDown .box2 .illust > div.illust2,
+.thridPage .depth1 .leftDown .box2 .photo > div.photo2,
+.thridPage .depth1 .leftDown .box2 .inde > div.inde2,
+.thridPage .depth1 .leftDown .box2 .premi > div.premi2,
+.thridPage .depth1 .leftDown .box2 .after > div.after2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 0%;
+}
+.thridPage .depth1 .leftDown .box1 .html > div.html3,
+.thridPage .depth1 .leftDown .box1 .css > div.css3,
+.thridPage .depth1 .leftDown .box1 .java > div.java3,
+.thridPage .depth1 .leftDown .box1 .jquery > div.jquery3,
+.thridPage .depth1 .leftDown .box1 .react > div.react3,
+.thridPage .depth1 .leftDown .box2 .illust > div.illust3,
+.thridPage .depth1 .leftDown .box2 .photo > div.photo3,
+.thridPage .depth1 .leftDown .box2 .inde > div.inde3,
+.thridPage .depth1 .leftDown .box2 .premi > div.premi3,
+.thridPage .depth1 .leftDown .box2 .after > div.after3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 130px;
+    line-height: 32px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction:  wrap;
+}
+.thridPage .depth1 .leftDown .box1 .html > div.html1 {
+    background: #e58d00;
+}
+.thridPage .depth1 .leftDown .box1 .html > div.html2 {
+    background: #e58d00;
+}
+.thridPage .depth1 .leftDown .box1 .html > div.html2.on1 {
+    animation: html 1s both 0.5s;
+}
+@keyframes html {
+    to {
+        height: 80%
+    }
+}
+.thridPage .depth1 .leftDown .box1 .html > div.html3 {
+    color: #e58d00;
+}
+.thridPage .depth1 .leftDown .box1 .css > div.css1 {
+    background: #2e2eff;
+}
+.thridPage .depth1 .leftDown .box1 .css > div.css2 {
+    background: #2e2eff;
+}
+.thridPage .depth1 .leftDown .box1 .css > div.css2.on1 {
+    animation: css 1s both 0.8s;
+}
+@keyframes css {
+    to {
+        height: 80%
+    }
+}
+.thridPage .depth1 .leftDown .box1 .css > div.css3 {
+    color: #2e2eff;
+}
+.thridPage .depth1 .leftDown .box1 .java > div.java1 {
+    background: #f131f7;
+}
+.thridPage .depth1 .leftDown .box1 .java > div.java2 {
+    background: #f131f7;
+}
+.thridPage .depth1 .leftDown .box1 .java > div.java2.on1 {
+    animation: java 1s both 1.1s;
+}
+@keyframes java {
+    to {
+        height: 60%
+    }
+}
+.thridPage .depth1 .leftDown .box1 .java > div.java3 {
+    color: #f131f7;
+}
+.thridPage .depth1 .leftDown .box1 .jquery > div.jquery1 {
+    background: #800080;
+}
+.thridPage .depth1 .leftDown .box1 .jquery > div.jquery2 {
+    background: #800080;
+}
+.thridPage .depth1 .leftDown .box1 .jquery > div.jquery2.on1 {
+    animation: jquery 1s both 1.4s;
+}
+@keyframes jquery {
+    to {
+        height: 70%
+    }
+}
+.thridPage .depth1 .leftDown .box1 .jquery > div.jquery3 {
+    color: #800080;
+}
+.thridPage .depth1 .leftDown .box1 .react > div.react1 {
+    background: #da73dd;
+}
+.thridPage .depth1 .leftDown .box1 .react > div.react2 {
+    background: #da73dd;
+}
+.thridPage .depth1 .leftDown .box1 .react > div.react2.on1 {
+    animation: react 1s both 1.7s;
+}
+@keyframes react {
+    to {
+        height: 60%
+    }
+}
+.thridPage .depth1 .leftDown .box1 .react > div.react3 {
+    color: #da73dd;
+}
+.thridPage .depth1 .leftDown .box2 .illust > div.illust1 {
+    background: #ef7726;
+}
+.thridPage .depth1 .leftDown .box2 .illust > div.illust2 {
+    background: #ef7726;
+}
+.thridPage .depth1 .leftDown .box2 .illust > div.illust2.on1 {
+    animation: illust 1s both 2.0s;
+}
+@keyframes illust {
+    to {
+        height: 80%
+    }
+}
+.thridPage .depth1 .leftDown .box2 .illust > div.illust3 {
+    color: #ef7726;
+}
+.thridPage .depth1 .leftDown .box2 .photo > div.photo1 {
+    background: #2aaed1;
+}
+.thridPage .depth1 .leftDown .box2 .photo > div.photo2 {
+    background: #2aaed1;
+}
+.thridPage .depth1 .leftDown .box2 .photo > div.photo2.on1 {
+    animation: photo 1s both 2.3s;
+}
+@keyframes photo {
+    to {
+        height: 90%
+    }
+}
+.thridPage .depth1 .leftDown .box2 .photo > div.photo3 {
+    color: #2aaed1;
+}
+.thridPage .depth1 .leftDown .box2 .inde > div.inde1 {
+    background: #e9458e;
+}
+.thridPage .depth1 .leftDown .box2 .inde > div.inde2 {
+    background: #e9458e;
+}
+.thridPage .depth1 .leftDown .box2 .inde > div.inde2.on1 {
+    animation: inde 1s both 2.6s;
+}
+@keyframes inde {
+    to {
+        height: 70%
+    }
+}
+.thridPage .depth1 .leftDown .box2 .inde > div.inde3 {
+    color: #e9458e;
+}
+.thridPage .depth1 .leftDown .box2 .premi > div.premi1 {
+    background: #9c57ad;
+}
+.thridPage .depth1 .leftDown .box2 .premi > div.premi2 {
+    background: #9c57ad;
+}
+.thridPage .depth1 .leftDown .box2 .premi > div.premi2.on1 {
+    animation: premi 1s both 2.9s;
+}
+@keyframes premi {
+    to {
+        height: 50%
+    }
+}
+.thridPage .depth1 .leftDown .box2 .premi > div.premi3 {
+    color: #9c57ad;
+}
+.thridPage .depth1 .leftDown .box2 .after > div.after1 {
+    background: #9770ba;
+}
+.thridPage .depth1 .leftDown .box2 .after > div.after2 {
+    background: #9770ba;
+}
+.thridPage .depth1 .leftDown .box2 .after > div.after2.on1 {
+    animation: after 1s both 3.2s;
+}
+@keyframes after {
+    to {
+        height: 50%
+    }
+}
+.thridPage .depth1 .leftDown .box2 .after > div.after3 {
+    color: #9770ba;
+}
+.thridPage .depth1 .leftDown .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffd65c;
+    opacity: 0.9;
+    z-index: 20;
+}
+.thridPage .depth1 .leftDown .cover p {
+    position: absolute;
+    top: 102%;
+    left: 2%;
+    font-size: 26px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.thridPage .depth1 .leftDown .cover p.on1 {
+    opacity: 1;
+    animation: pulse 1s both infinite 0.2s;
+}
+/*depth1 leftDown 제어 끝*/
+
+/*depth2 rightUp 제어 시작*/
+.thridPage .depth2 .rightUp .innerBox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 330px;
+    height: 400px;
+    background: #fff;
+    z-index: 19;
+}
+.thridPage .depth2 .rightUp .outerBox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0px;
+    margin: 0 auto;
+    width: 330px;
+    height: 400px;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    display: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    z-index: 20;
+}
+.thridPage .depth2 .rightUp .outerBox .textBox {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.thridPage .depth2 .rightUp .outerBox .textBox h2 {
+    font-size: 28px;
+}
+.thridPage .depth2 .rightUp .outerBox .textBox p {
+    padding: 20px 0;
+}
+.thridPage .depth2 .rightUp .outerBox .textBox a {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 8px 13px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.thridPage .depth2 .rightUp .outerBox .textBox a:hover {
+    background: #fff;
+    color: #000;
+}
+.thridPage .depth2 .rightUp .outerBox .uniP {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right :0;
+    margin: 0 auto;
+    font-size: 14px;
+}
