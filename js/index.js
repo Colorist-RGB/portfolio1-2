@@ -99,8 +99,8 @@ $('.aboutBtn').on('click',function(e){
     $('.thridPage .depth1 .leftDown .box2 .illust > div.illust2').removeClass('on1')
     $('.thridPage .depth1 .leftDown .box2 .photo > div.photo2').removeClass('on1')
     $('.thridPage .depth1 .leftDown .box2 .inde > div.inde2').removeClass('on1')
-    $('.thridPage .depth1 .leftDown .box2 .premi > div.premi2').removeClass('on1')
-    $('.thridPage .depth1 .leftDown .box2 .after > div.after2').removeClass('on1')
+    $('.thridPage .depth1 .leftDown .box2 .php > div.php2').removeClass('on1')
+    $('.thridPage .depth1 .leftDown .box2 .sql > div.sql2').removeClass('on1')
 })
 //포트폴리오 뒤로가기 클릭 시
 $('.portBtn').on('click',function(e){
@@ -197,8 +197,8 @@ $('.thridPage .depth1 .leftDown .cover').on('click',function(e){
     $('.thridPage .depth1 .leftDown .box2 .illust > div.illust2').addClass('on1')
     $('.thridPage .depth1 .leftDown .box2 .photo > div.photo2').addClass('on1')
     $('.thridPage .depth1 .leftDown .box2 .inde > div.inde2').addClass('on1')
-    $('.thridPage .depth1 .leftDown .box2 .premi > div.premi2').addClass('on1')
-    $('.thridPage .depth1 .leftDown .box2 .after > div.after2').addClass('on1')
+    $('.thridPage .depth1 .leftDown .box2 .php > div.php2').addClass('on1')
+    $('.thridPage .depth1 .leftDown .box2 .sql > div.sql2').addClass('on1')
 })
 $('.thridPage .depth1 .leftDown .cover').hover(
     function(){
