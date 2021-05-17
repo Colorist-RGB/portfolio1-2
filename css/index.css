@@ -773,8 +773,8 @@ body {
 .thridPage .depth1 .leftDown .box2 .illust > div.illust3 span.title,
 .thridPage .depth1 .leftDown .box2 .photo > div.photo3 span.title,
 .thridPage .depth1 .leftDown .box2 .inde > div.inde3 span.title,
-.thridPage .depth1 .leftDown .box2 .premi > div.premi3 span.title,
-.thridPage .depth1 .leftDown .box2 .after > div.after3 span.title {
+.thridPage .depth1 .leftDown .box2 .php > div.php3 span.title,
+.thridPage .depth1 .leftDown .box2 .sql > div.sql3 span.title {
     font-size: 24px;
 }
 .thridPage .depth1 .leftDown .box1 .html > div.html3 span.percent,
@@ -785,8 +785,8 @@ body {
 .thridPage .depth1 .leftDown .box2 .illust > div.illust3 span.percent,
 .thridPage .depth1 .leftDown .box2 .photo > div.photo3 span.percent,
 .thridPage .depth1 .leftDown .box2 .inde > div.inde3 span.percent,
-.thridPage .depth1 .leftDown .box2 .premi > div.premi3 span.percent,
-.thridPage .depth1 .leftDown .box2 .after > div.after3 span.percent {
+.thridPage .depth1 .leftDown .box2 .php > div.php3 span.percent,
+.thridPage .depth1 .leftDown .box2 .sql > div.sql3 span.percent {
     font-size: 32px;
 }
 .thridPage .depth1 .leftDown .box1 .html > div.html3 span.percent span.uniText,
@@ -797,8 +797,8 @@ body {
 .thridPage .depth1 .leftDown .box2 .illust > div.illust3 span.percent span.uniText,
 .thridPage .depth1 .leftDown .box2 .photo > div.photo3 span.percent span.uniText,
 .thridPage .depth1 .leftDown .box2 .inde > div.inde3 span.percent span.uniText,
-.thridPage .depth1 .leftDown .box2 .premi > div.premi3 span.percent span.uniText,
-.thridPage .depth1 .leftDown .box2 .after > div.after3 span.percent span.uniText {
+.thridPage .depth1 .leftDown .box2 .php > div.php3 span.percent span.uniText,
+.thridPage .depth1 .leftDown .box2 .sql > div.sql3 span.percent span.uniText {
     font-size: 20px;
 }
 .thridPage .depth1 .leftDown .box1 .html > div.html1,
@@ -809,8 +809,8 @@ body {
 .thridPage .depth1 .leftDown .box2 .illust > div.illust1,
 .thridPage .depth1 .leftDown .box2 .photo > div.photo1,
 .thridPage .depth1 .leftDown .box2 .inde > div.inde1,
-.thridPage .depth1 .leftDown .box2 .premi > div.premi1,
-.thridPage .depth1 .leftDown .box2 .after > div.after1 {
+.thridPage .depth1 .leftDown .box2 .php > div.php1,
+.thridPage .depth1 .leftDown .box2 .sql > div.sql1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -827,8 +827,8 @@ body {
 .thridPage .depth1 .leftDown .box2 .illust > div.illust2,
 .thridPage .depth1 .leftDown .box2 .photo > div.photo2,
 .thridPage .depth1 .leftDown .box2 .inde > div.inde2,
-.thridPage .depth1 .leftDown .box2 .premi > div.premi2,
-.thridPage .depth1 .leftDown .box2 .after > div.after2 {
+.thridPage .depth1 .leftDown .box2 .php > div.php2,
+.thridPage .depth1 .leftDown .box2 .sql > div.sql2 {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -844,8 +844,8 @@ body {
 .thridPage .depth1 .leftDown .box2 .illust > div.illust3,
 .thridPage .depth1 .leftDown .box2 .photo > div.photo3,
 .thridPage .depth1 .leftDown .box2 .inde > div.inde3,
-.thridPage .depth1 .leftDown .box2 .premi > div.premi3,
-.thridPage .depth1 .leftDown .box2 .after > div.after3 {
+.thridPage .depth1 .leftDown .box2 .php > div.php3,
+.thridPage .depth1 .leftDown .box2 .sql > div.sql3 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -996,38 +996,38 @@ body {
 .thridPage .depth1 .leftDown .box2 .inde > div.inde3 {
     color: #e9458e;
 }
-.thridPage .depth1 .leftDown .box2 .premi > div.premi1 {
+.thridPage .depth1 .leftDown .box2 .php > div.php1 {
     background: #9c57ad;
 }
-.thridPage .depth1 .leftDown .box2 .premi > div.premi2 {
+.thridPage .depth1 .leftDown .box2 .php > div.php2 {
     background: #9c57ad;
 }
-.thridPage .depth1 .leftDown .box2 .premi > div.premi2.on1 {
-    animation: premi 1s both 2.9s;
+.thridPage .depth1 .leftDown .box2 .php > div.php2.on1 {
+    animation: php 1s both 2.9s;
 }
-@keyframes premi {
+@keyframes php {
     to {
-        height: 50%
+        height: 70%
     }
 }
-.thridPage .depth1 .leftDown .box2 .premi > div.premi3 {
+.thridPage .depth1 .leftDown .box2 .php > div.php3 {
     color: #9c57ad;
 }
-.thridPage .depth1 .leftDown .box2 .after > div.after1 {
+.thridPage .depth1 .leftDown .box2 .sql > div.sql1 {
     background: #9770ba;
 }
-.thridPage .depth1 .leftDown .box2 .after > div.after2 {
+.thridPage .depth1 .leftDown .box2 .sql > div.sql2 {
     background: #9770ba;
 }
-.thridPage .depth1 .leftDown .box2 .after > div.after2.on1 {
-    animation: after 1s both 3.2s;
+.thridPage .depth1 .leftDown .box2 .sql > div.sql2.on1 {
+    animation: sql 1s both 3.2s;
 }
-@keyframes after {
+@keyframes sql {
     to {
-        height: 50%
+        height: 70%
     }
 }
-.thridPage .depth1 .leftDown .box2 .after > div.after3 {
+.thridPage .depth1 .leftDown .box2 .sql > div.sql3 {
     color: #9770ba;
 }
 .thridPage .depth1 .leftDown .cover {
